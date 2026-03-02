@@ -49,11 +49,12 @@ Gauss Seidel converged in 61.9% fewer iterations
 
 Both methods solve **Ax = b** by rearranging each equation to isolate one variable and iterating until the solution stops changing.
 
-- **Jacobi** — computes all new values using only the previous iteration's values, then updates all at once
-- **Gauss-Seidel** — updates each variable immediately, so newer values are used within the same iteration, leading to faster convergence
+- **Jacobi**: computes all new values using only the previous iteration's values, then updates all at once
+- **Gauss-Seidel**: updates each variable immediately, so newer values are used within the same iteration, leading to faster convergence
 
 ## Notes
 
 - The program automatically reorders rows to improve diagonal dominance before solving
-- Convergence is not guaranteed for all matrices — both methods work best when the matrix is diagonally dominant
-- Tolerance is set to `1e-10`
+- Convergence is not guaranteed for all matrices
+- Both methods work best when the matrix is diagonally dominant
+- Tolerance is set to **10<sup>-10</sup>**
